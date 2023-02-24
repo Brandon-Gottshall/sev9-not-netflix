@@ -11,7 +11,7 @@ const SummaryModal = () => {
 
   return (
     <div>
-      <button className ='infomation-tag' onClick={onOpenModal}><img src={infobutton} height='10px' width='10px'></img></button>
+      <button className ='info-tag' onClick={onOpenModal}><img src={infobutton} height='15px' width='15px'></img></button>
       <Modal open={open} onClose={onCloseModal} center>
         <h2>Film Title</h2>
         <p>This is where the video goes</p>

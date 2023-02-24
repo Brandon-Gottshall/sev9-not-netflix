@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+.info-tag{
+  border: none;
+  appearance: none;
+  background-color: inherit;
+  opacity: 30%;
+}
