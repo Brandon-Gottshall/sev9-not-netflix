@@ -10,7 +10,7 @@ function App() {
         <heroImage/>
         <SummaryModal/>
       </div>
-        <SummaryModal/>
+        <SummaryModal id={12}/>
     </div>
   );
 }
