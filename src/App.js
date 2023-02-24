@@ -3,7 +3,9 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <h1>React App</h1>
+      <h1>{process.env.REACT_APP_TMDB_API_KEY}
+      
+      </h1>
     </div>
   );
 }
