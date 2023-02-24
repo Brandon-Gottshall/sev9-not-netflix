@@ -19,7 +19,7 @@ const HeroImage = () => {
         fetch(`https://api.themoviedb.org/3/movie/${id?.id}/videos?api_key=62be9389e81a8c75366a852f32ce210a&language=en-US`)
             .then(res => res.json())
             .then(res => {
-            getKey(res.results[2])
+            getKey(res.results[0])
             })
         }, [])
     let videoURL = `https://www.youtube.com/watch?v=${key?.key}`
@@ -27,7 +27,7 @@ const HeroImage = () => {
 return(
     <div>
    <ReactPlayer url={videoURL}/>
-   <SummaryModal id={id?.id}/>
+   <SummaryModal className='hero-modal' id={id?.id}/>
     </div>
 )
 }

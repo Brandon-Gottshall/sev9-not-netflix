@@ -20,7 +20,7 @@ export default function SummaryModal  ({ id = 13 }) {
   }, [])
   return (
     <div>
-      <button className='info-tag' onClick={onOpenModal}><img src={infobutton} height='15px' width='15px'></img></button>
+      <button className='info-tag' onClick={onOpenModal}><img src={infobutton} height="15px" width='15px'></img></button>
       <Modal open={open} onClose={onCloseModal} center>
         <h2>Film Title: {info?.original_title}</h2>
         <p>This is where the video goes</p>

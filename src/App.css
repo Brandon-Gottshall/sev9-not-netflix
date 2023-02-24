@@ -6,4 +6,11 @@ body{
   appearance: none;
   background-color: inherit;
   opacity: 30%;
+  height: 15px;
+   width: 15px;
+}
+
+.hero-modal{
+  height: 50px;
+  width: 50px;
 }
