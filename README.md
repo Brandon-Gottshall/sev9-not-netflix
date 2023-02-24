@@ -13,6 +13,7 @@ Not Netflix is a web application that allows users to browse movies and TV shows
 - Shawn Bailey @shawnmbailey
 - Connor Hennessey @hennc94
 
+
 <table style="width: 80vw; margin: 0 auto; height: 50vh; border-collapse: separate; border-spacing: 15px;">
   <tr>
     <td style="border: 2px black solid; width: 25%; height: 100%; text-align:center;">
