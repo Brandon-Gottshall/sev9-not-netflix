@@ -1,5 +1,7 @@
 import React, {useState, useEffect} from "react"
-// import ReactPlayer from 'react-player'
+import HoverVideoPlayer from 'react-hover-video-player';
+import ReactPlayer from 'react-player'
+import SummaryModal from './Modal.js';
 
 const HeroImage = () => {
     const [id, getID] = useState();
@@ -20,9 +22,12 @@ const HeroImage = () => {
             getKey(res.results[2])
             })
         }, [])
+    let videoURL = `https://www.youtube.com/watch?v=${key?.key}`
+
 return(
     <div>
-    <h1>{id?.id}</h1>
+   <ReactPlayer url={videoURL}/>
+   <SummaryModal id={id?.id}/>
     </div>
 )
 }
