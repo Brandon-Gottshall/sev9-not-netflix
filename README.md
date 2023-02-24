@@ -21,7 +21,7 @@ Not Netflix is a web application that allows users to browse movies and TV shows
         <img src="https://avatars.githubusercontent.com/u/57220112?v=4" alt="Sarah" width="90%" style="border-radius: 9999px; margin-top: 10px;"/>
         <h6>Sarah Johnson</h6>
       </div>
-      <a href="https://github.com/nebulamarie" alt="Sarah's Github">
+      <a href="https://github.com/kitteyandkat" alt="Sarah's Github">
         <img src="./public/github-mark.svg" alt="Github Invertocat" style="width: 75px; height: 75px; margin-bottom: 15px;"/>
       </a>
     </td>
