@@ -1,15 +1,13 @@
 import './App.css';
-const HeroImage = () => {
-    const [id, getID] = useState();
+import HeroImage from './HeroImage';
 
 function App() {
   return (
     <div className="App">
-      <h1>{process.env.REACT_APP_TMDB_API_KEY}
-      
-      </h1>
+      <h1>{process.env.REACT_APP_TMDB_API_KEY}</h1>
+      <HeroImage />
     </div>
   );
-}}
+}
 
 export default App;
