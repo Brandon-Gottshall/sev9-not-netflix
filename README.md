@@ -12,7 +12,7 @@ Not Netflix is a web application that allows users to browse movies and TV shows
 - Marie Epps @nebulamarie
 - Shawn Bailey @shawnmbailey
 - Connor Hennessey @hennc94
-
+<svg width="700px" height="10px" xmlns="http://www.w3.org/2000/svg"> 
 <div style="width: 80vw; margin: 0 auto; height: 50vh; display: flex; justify-content: start; min-width: 500px; ">
     <div style="border: 2px black solid; width: 25%; height: 100%; display: flex; flex-direction: column; text-align:center; align-items: center; justify-content: space-between">
     <div> 
@@ -51,7 +51,7 @@ Not Netflix is a web application that allows users to browse movies and TV shows
     </a>
   </div>
 </div>
-
+</svg>
 ## Project Links
 
 - [Not Netflix](https://sev9-not-netflix.vercel.app/)
@@ -63,5 +63,6 @@ Not Netflix is a web application that allows users to browse movies and TV shows
 ## Project Screenshots
 
 ## Libraries Used
+- React-player
 
 ## Code Snippets
