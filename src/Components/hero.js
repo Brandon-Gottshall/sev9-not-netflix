@@ -1,5 +1,7 @@
 import React, {useState, useEffect} from "react"
+import ReactPlayer from 'react-player'
 
+const heroImage = () => {
 //(useEffect) only when component loads for first time, run this: 
     //grab trending video from tmdb 
     // axios.get(https://api.themoviedb.org/3/trending/all/day?api_key=62be9389e81a8c75366a852f32ce210a)
@@ -7,5 +9,8 @@ import React, {useState, useEffect} from "react"
     // axios.get(https://api.themoviedb.org/3/movie/${id}/videos?api_key=62be9389e81a8c75366a852f32ce210a&language=en-US)
     //loop through results and grab youtube video key from object with type: 'Trailer'
     // update state with new movie url
+<ReactPlayer url='https://www.youtube.com/watch?v=VDhSqDB53rU'/>
 
+}
 
+export default heroImage
