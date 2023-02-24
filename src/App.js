@@ -1,4 +1,6 @@
 import './App.css';
+const HeroImage = () => {
+    const [id, getID] = useState();
 
 function App() {
   return (
@@ -8,6 +10,6 @@ function App() {
       </h1>
     </div>
   );
-}
+}}
 
 export default App;
