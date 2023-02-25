@@ -19,6 +19,6 @@ body{
   display:none !important;
 } */
 
-.html5-video-player {
+.ytp-chrome-top, .ytp-show-cards-title {
   display:none !important;
 }

@@ -11,10 +11,10 @@ const HeroImage = () => {
     const [playing, setPlaying] =useState(false);
 
 function startPlay(){
-    setPlaying(!true)
+    setPlaying(true)
 }
 function stopPlay(){
-    setPlaying(!false)
+    setPlaying(false)
 }
 
     useEffect( () => {
@@ -33,12 +33,12 @@ function stopPlay(){
             }))
         }, [])
 
-    let videoURL = `https://www.youtube.com/watch?v=${key?.key}?modestbranding=1`
+    let videoURL = `https://www.youtube.com/watch?v=${key?.key}?modestbranding=0&showinfo=0&fs=0`
 
 return(
     <div>
-        <iframe src={videoURL} height="350"  width="575"></iframe>.
-   <ReactPlayer muted = {true} cotnrols={false} playing= {playing} onMouseOver= { startPlay } onMouseLeave= {stopPlay} url= {videoURL} />
+        {/* <iframe src={videoURL} height="350"  width="575"></iframe>. */}
+   <ReactPlayer muted = {true} controls = {true} playing= {playing} onMouseOver= { startPlay } onMouseLeave= {stopPlay} url= {videoURL} loop = {true} />
    <SummaryModal className='hero-modal' id={id?.id}/>
     </div>
 )
