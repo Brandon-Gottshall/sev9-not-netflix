@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from "react"
-import HoverVideoPlayer from 'react-hover-video-player';
 import ReactPlayer from 'react-player'
 import SummaryModal from './Modal.js';
 
