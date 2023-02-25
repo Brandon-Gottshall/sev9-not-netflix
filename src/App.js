@@ -1,9 +1,13 @@
 import './App.css';
+import SummaryModal from './Components/Modal';
+import HeroImage from './Components/hero';
 
 function App() {
   return (
-    <div className="App">
-      <h1>React App</h1>
+    <div className="main-container">
+      <div className='hero-image'>
+        <HeroImage/>
+      </div>
     </div>
   );
 }
