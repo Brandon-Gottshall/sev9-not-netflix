@@ -8,6 +8,7 @@ const HeroImage = () => {
     const [id, getID] = useState();
     const [key, getKey] = useState();
     const [playing, setPlaying] =useState(false);
+    const [mute, unMute] = useState(false);
 
 function startPlay(){
     setPlaying(true)
@@ -32,13 +33,13 @@ function stopPlay(){
             }))
         }, [])
 
-    let videoURL = `https://www.youtube.com/watch?v=${key?.key}?modestbranding=1&showinfo=0&fs=0`
+    let videoURL = `https://www.youtube.com/watch?v=${key?.key}?modestbranding=1&showinfo=0&fs=0&rel=0`
 
 return(
-    <div>
+    <div className="hero-row row">
         {/* <iframe width="560" height="315" src= {`https://www.youtube.com/embed/${key?.key}?modestbranding=1&showinfo=0`}frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> */}
-   <ReactPlayer muted = {true} controls = {true} playing= {playing} onMouseOver= { startPlay } onMouseLeave= {stopPlay} url= {videoURL} loop = {true} />
-   <SummaryModal className='hero-modal' id={id?.id}/>
+   <ReactPlayer muted = {true} controls = {true} playing= {playing} onMouseOver= { startPlay } onMouseLeave= {stopPlay} url= {videoURL} loop = {true} height = '100%' width = '100%' />
+   {id && <SummaryModal className='hero-modal' id={id?.id}/>}
     </div>
 )
 }

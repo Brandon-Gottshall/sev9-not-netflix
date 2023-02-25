@@ -5,7 +5,7 @@ import infobutton from './info-button.png'
 import ReactPlayer from 'react-player'
 
 
-export default function SummaryModal  ({ id = 13 }) {
+export default function SummaryModal  ({ id = 13, className }) {
   const [open, setOpen] = useState(false);
   const [info, setInfo] = useState();
   const [key, getKey] = useState();
@@ -27,8 +27,8 @@ export default function SummaryModal  ({ id = 13 }) {
       })
   }, [])
   return (
-    <div>
-      <button className='info-tag' onClick={onOpenModal}><img src={infobutton} height="15px" width='15px'></img></button>
+    <div className={className}>
+      <button className='info-tag' onClick={onOpenModal}><img src={infobutton}></img></button>
       <Modal open={open} onClose={onCloseModal} center>
         <h2>Film Title: {info?.original_title}</h2>
         <ReactPlayer url={videoURL}/>

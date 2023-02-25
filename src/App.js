@@ -8,10 +8,7 @@ function App() {
     <div className="main-container">
       <div className='hero-image'>
         <HeroImage/>
-        <SummaryModal/>
       </div>
-        <SummaryModal id={12}/>
-        <SummaryModal id={866413}/>
     </div>
   );
 }
