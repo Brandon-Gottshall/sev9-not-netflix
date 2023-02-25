@@ -2,6 +2,7 @@ import './App.css';
 import SummaryModal from './Components/Modal';
 import HeroImage from './Components/hero';
 
+
 function App() {
   return (
     <div className="main-container">
@@ -12,4 +13,4 @@ function App() {
   );
 }
 
-export default App;
+export default App
