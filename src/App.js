@@ -1,5 +1,6 @@
-import './App.css';
-import HeroImage from './HeroImage';
+import React from 'react'
+import './App.css'
+import HeroImage from './components/HeroImage'
 
 function App() {
   return (
@@ -10,4 +11,4 @@ function App() {
   );
 }
 
-export default App;
+export default App
