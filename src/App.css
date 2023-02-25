@@ -1,4 +1,10 @@
-body{
+.main-container {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body {
   background-color: rgb(25, 25, 25);
 }
 .row{
@@ -44,11 +50,12 @@ img{
 }
 
 
-/* 
+/*
+Youtube player overlay elements CSS overides
 .ytp-pause-overlay-container, .ytp-chrome-top, .ytp-show-cards-title{
   display:none !important;
-} */
+}
 
-/* .ytp-chrome-top, .ytp-show-cards-title {
+.ytp-chrome-top, .ytp-show-cards-title {
   display:none !important;
-} */
+} */ 

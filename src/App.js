@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import SummaryModal from './Components/Modal';
 import HeroImage from './Components/hero';
