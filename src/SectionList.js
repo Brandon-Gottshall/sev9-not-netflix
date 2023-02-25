@@ -11,21 +11,30 @@ function fetchActionMovies() {
 }
 
 // Comedy
-fetch(`${apiUrl}/discover/movie?api_key=${apiKey}&sort_by=popularity.desc&with_genres=35&page=1`)
+function fetchComedyMovies(){
+  fetch(`${apiUrl}/discover/movie?api_key=${apiKey}&sort_by=popularity.desc&with_genres=35&page=1`)
   .then(response => response.json())
-  .then(data => setComedyMovies(data.results.slice(0, 10)))
+  .then(data =>data.results.slice(0, 10))
   .catch(error => console.error(error));
+}
  
 // Crime
-fetch(`${apiUrl}/discover/movie?api_key=${apiKey}&sort_by=popularity.desc&with_genres=80&page=1`)
+function fetchCrimeMovies(){
+  fetch(`${apiUrl}/discover/movie?api_key=${apiKey}&sort_by=popularity.desc&with_genres=80&page=1`)
   .then(response => response.json())
-  .then(data => setCrimeMovies(data.results.slice(0, 10)))
+  .then(data =>data.results.slice(0, 10))
   .catch(error => console.error(error));
+}
 
 // Horror
-fetch(`${apiUrl}/discover/movie?api_key=${apiKey}&sort_by=popularity.desc&with_genres=27&page=1`)
+function fetchHorrorMovies(){
+  fetch(`${apiUrl}/discover/movie?api_key=${apiKey}&sort_by=popularity.desc&with_genres=27&page=1`)
   .then(response => response.json())
-  .then(data => setHorrorMovies(data.results.slice(0, 10)))
+  .then(data =>data.results.slice(0, 10))
   .catch(error => console.error(error));
+}
 
 export { fetchActionMovies }
+export { fetchComedyMovies }
+export { fetchCrimeMovies }
+export { fetchHorrorMovies }
