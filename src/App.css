@@ -14,3 +14,11 @@ body{
   height: 50px;
   width: 50px;
 }
+/* 
+.ytp-pause-overlay-container, .ytp-chrome-top, .ytp-show-cards-title{
+  display:none !important;
+} */
+
+.html5-video-player {
+  display:none !important;
+}
