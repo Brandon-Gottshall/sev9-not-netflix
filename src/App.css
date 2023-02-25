@@ -4,3 +4,18 @@
   align-items: center;
   justify-content: center;
 }
+.movie-sections{
+  display: flex;
+  flex-direction: column;
+}
+.movie-section{
+  border:solid 1px red;
+  display: flex;
+  justify-content: center;
+}
+.single-movie{
+  border: solid 2px blue;
+  padding: 10px;
+  margin: 2px;
+
+}
