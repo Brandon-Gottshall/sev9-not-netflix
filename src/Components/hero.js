@@ -1,10 +1,10 @@
 import React, {useState, useEffect} from "react"
 import ReactPlayer from 'react-player'
-import SummaryModal from './Modal.js';
+import infobutton from './info-button.png'
 
 
 
-const HeroImage = () => {
+const HeroImage = ({setCardModal}) => {
     const [id, getID] = useState();
     const [key, getKey] = useState();
     const [playing, setPlaying] =useState(false);
@@ -39,7 +39,8 @@ return(
     <div className="hero-row row">
         {/* <iframe width="560" height="315" src= {`https://www.youtube.com/embed/${key?.key}?modestbranding=1&showinfo=0`}frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> */}
    <ReactPlayer muted = {true} controls = {true} playing= {playing} onMouseOver= { startPlay } onMouseLeave= {stopPlay} url= {videoURL} loop = {true} height = '100%' width = '100%' />
-   {id && <SummaryModal className='hero-modal' id={id?.id}/>}
+   {/* {id && <SummaryModal className='hero-modal' id={id?.id}/>} */}
+    <button className='info-tag' onClick={()=>setCardModal(id)}><img src={infobutton}></img></button>
     </div>
 )
 }
