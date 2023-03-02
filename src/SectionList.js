@@ -34,7 +34,4 @@ function fetchHorrorMovies(){
   .catch(error => console.error(error));
 }
 
-export { fetchActionMovies }
-export { fetchComedyMovies }
-export { fetchCrimeMovies }
-export { fetchHorrorMovies }
+export { fetchActionMovies, fetchComedyMovies, fetchCrimeMovies, fetchHorrorMovies }
