@@ -1,15 +1,18 @@
 import React from 'react'
+import Card from './Card';
 
 export default function MovieSection(props) {
-console.log(props.movies)
-    return(
+    console.log(props.movies)
+    
+    return (
         <div className="movie-section">
-
-            {props.movies?props.movies.map(movie =>{
+            {props.movies ? props.movies.map(movie => {
                 return (
-                    <div className="single-movie">{movie.original_title}</div>
+                   <Card title={movie.title} posterPath={movie.poster_path} key={movie.id}/>
+                   
                 )
-            }): ''}
+            }) : ''}
         </div>
+
     )
 }

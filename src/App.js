@@ -11,6 +11,8 @@ function App() {
   const [comedyMovies, setComedyMovies] = useState();
   const [crimeMovies, setCrimeMovies] = useState();
   const [horrorMovies, setHorrorMovies] = useState();
+  
+  
   useEffect(() => {
     const apiKey = process.env.REACT_APP_TMDB_API_KEY;
     const apiUrl = "https://api.themoviedb.org/3";
@@ -36,37 +38,29 @@ function App() {
   }, []);
   return (
     <div className="App">
-      {/* <h1>{process.env.REACT_APP_TMDB_API_KEY}</h1> */}
+      {/* <h1>{process.env.REACT_APP_TMDB_API_KEY}</h1>  */}
       <div className='movie-sections'>
-        <h1>Horror</h1>
+        <div>
+          <h1>Horror</h1>
         <MovieSection movies={horrorMovies} genre={'Horror'} />
+        </div>
+        <div>
         <h1>Action</h1>
         <MovieSection movies={actionMovies} genre={'Action'} />
+        </div>
+        <div>
         <h1>Crime</h1>
         <MovieSection movies={crimeMovies} genre={'Crime'} />
-        <h1>Comedy</h1>
+        </div>
+        <div>
+        <h1>Comedy</h1> 
         <MovieSection movies={comedyMovies} genre={'Comedy'} />
-/>
+        </div>
       </div>
     </div>
   );
 }
-function GetInfo(){
-  return (
-    <div>
-      {movie}
-      <button type ='button' onClick{LearnMore}> Learn More </button>
-    </div>
-  )
-}
 export default App;
 
 
-/*
-fetch(`${apiUrl}/discover/movie?api_key=${apiKey}&sort_by=popularity.desc&with_genres=${genreId}&page=1`)
-  .then(response => response.json())
-  .then(data => {
-    const movies = data.results.slice(0, 10); // Take top 10 movies    console.log(movies);
-    // Use this data to render the section component  })
-  .catch(error => console.error(error));
-  */
+
