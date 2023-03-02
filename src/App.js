@@ -9,6 +9,8 @@ function App() {
   const [comedyMovies, setComedyMovies] = useState();
   const [crimeMovies, setCrimeMovies] = useState();
   const [horrorMovies, setHorrorMovies] = useState();
+  
+  
   useEffect(() => {
     setActionMovies(fetchCalls.fetchActionMovies());
     setComedyMovies(fetchCalls.fetchComedyMovies());
