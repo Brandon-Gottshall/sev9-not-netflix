@@ -6,13 +6,13 @@ import { useState, useEffect } from 'react';
 function App() {
 
   //when this is active the modal will be shown 
-  const [cardModal, setCardModal] = useState();
+  const [cardModalData, setCardModalData] = useState();
   
   return (
     <div className="main-container">
-      {cardModal && <SummaryModal cardData={cardModal} setCardModal={setCardModal}/>}
+      {cardModalData && <SummaryModal cardModalData={cardModalData} setCardModalData={setCardModalData}/>}
       <div className='hero-image'>
-        <HeroImage setCardModal={setCardModal}/>
+        <HeroImage setCardModalData={setCardModalData}/>
       </div>
     </div>
   );
