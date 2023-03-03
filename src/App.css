@@ -17,20 +17,21 @@ img{
   width: 15px;
 }
 
-.hero-modal .info-tag img{
+.hero-row .info-tag img{
   height: 25px;
   width: 25px;
   cursor: pointer;
   opacity: 90%;
   transition: all 1s;
-  z-index: 3;
-  position: relative;
-  top: -100px; 
-  left: -60px;
+  z-index: 5;
+  position: absolute;
+  bottom: 20px; 
+  right: 40px;
   padding: 20px;
 }
 .hero-row{
   aspect-ratio: 16/9;
+  position: relative;
 }
 
 .hero-modal .info-tag img:hover{
@@ -50,13 +51,12 @@ img{
 }
 .react-responsive-modal-closeButton{
   filter: invert(75%);
-  
-  opacity: 50%;
+  transition: opacity 1s;
+  opacity: 30%;
 }
 .react-responsive-modal-closeButton:hover{
   opacity: 100%;
   filter: invert(70%) brightness(50%) sepia(100) saturate(100) hue-rotate(25deg);
-  transition: all 2s ease-in-out;
 }
 
 /* 
