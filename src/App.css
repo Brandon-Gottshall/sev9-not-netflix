@@ -79,7 +79,7 @@ img{
 .movie-sections{
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: flex-start;
 }
 .movie-sections div{
   padding-left: 10px;
@@ -92,6 +92,7 @@ img{
   justify-content: center;
   overflow-x: scroll;
   overflow-y: hidden;
+  background-color: black;
 }
 img{
   width: 200px;
