@@ -18,7 +18,7 @@ h1 {
 .movie-sections{
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: flex-start;
 }
 .movie-sections div{
   padding-left: 10px;
@@ -31,6 +31,7 @@ h1 {
   justify-content: center;
   overflow-x: scroll;
   overflow-y: hidden;
+  background-color: black;
 }
 img{
   width: 200px;
