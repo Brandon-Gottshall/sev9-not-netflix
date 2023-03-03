@@ -2,6 +2,7 @@ import './App.css';
 import SummaryModal from './Components/Modal';
 import HeroImage from './Components/hero';
 import { useState, useEffect } from 'react';
+import SearchBar from './Components/SearchBar';
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
       {cardModalData && <SummaryModal cardModalData={cardModalData} setCardModalData={setCardModalData}/>}
       <div className='hero-image'>
         <HeroImage setCardModalData={setCardModalData}/>
+        <SearchBar/>
       </div>
     </div>
   );
