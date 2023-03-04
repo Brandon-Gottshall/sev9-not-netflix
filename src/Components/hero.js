@@ -25,7 +25,9 @@ const Hero = ({setCardModalData}) => {
       .then((res) => res.json())
       .then((res) => {
         setID(res.results[0].id);
+        setCardModalData(res.results[0])
         setMediaType(res.results[0].media_type);
+        console.log(res.results[0])
         console.log(res.results);
         let url = `https://api.themoviedb.org/3/${res.results[0].media_type}/${res.results[0].id}/videos?api_key=62be9389e81a8c75366a852f32ce210a&language=en-US`;
         console.log(url);
