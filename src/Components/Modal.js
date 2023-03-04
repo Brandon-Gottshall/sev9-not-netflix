@@ -20,8 +20,8 @@ export default function SummaryModal({
 
   useEffect(() => {
     fetch(
-      "https:" +
-        `//api.themoviedb.org/3/${media_type}/${id}?api_key=62be9389e81a8c75366a852f32ce210a&language=en-US`
+      "https:/" +
+        `/api.themoviedb.org/3/${media_type}/${id}?api_key=62be9389e81a8c75366a852f32ce210a&language=en-US`
     )
       .then((res) => res.json())
       .then((res) => {
@@ -38,16 +38,16 @@ export default function SummaryModal({
   }, [media_type, id]);
   return (
     <>
-      { info &&
+      {info && (
         <div className={className}>
           <Modal open={true} onClose={onCloseModal} center>
             <h2>{info.name}</h2>
             <ReactPlayer url={videoURL} />
             <p>{info.overview}</p>
-            { (media_type !== 'tv') && <p>Run Time: {info.runtime} minutes</p>}
+            {media_type !== "tv" && <p>Run Time: {info.runtime} minutes</p>}
           </Modal>
         </div>
-      }
+      )}
     </>
   );
 }

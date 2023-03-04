@@ -33,13 +33,13 @@ function App() {
 
       <div className="movie-sections">
         <h1>Horror</h1>
-        <MovieSection movies={horrorMovies} genre={"Horror"} />
+        <MovieSection setModalData={setModalData} movies={horrorMovies} genre={"Horror"} />
         <h1>Action</h1>
-        <MovieSection movies={actionMovies} genre={"Action"} />
+        <MovieSection setModalData={setModalData} movies={actionMovies} genre={"Action"} />
         <h1>Comedy</h1>
-        <MovieSection movies={comedyMovies} genre={"Comedy"} />
+        <MovieSection setModalData={setModalData} movies={comedyMovies} genre={"Comedy"} />
         <h1>Crime</h1>
-        <MovieSection movies={crimeMovies} genre={"Crime"} />
+        <MovieSection setModalData={setModalData} movies={crimeMovies} genre={"Crime"} />
       </div>
     </div>
   );

@@ -8,7 +8,7 @@ export default function MovieSection(props) {
         <div className="movie-section">
             {props.movies ? props.movies.map(movie => {
                 return (
-                    <Card title={movie.title} posterPath={movie.poster_path} key={movie.id} />
+                    <Card onClick={() => props.setModalData({id: movie.id, media_type: 'movie'})} title={movie.title} posterPath={movie.poster_path} key={movie.id} />
                 )
             }) : ''}
         </div>

@@ -25,7 +25,6 @@ const Hero = ({setCardModalData}) => {
       .then((res) => res.json())
       .then((res) => {
         setID(res.results[0].id);
-        setCardModalData(res.results[0])
         setMediaType(res.results[0].media_type);
         console.log(res.results[0])
         console.log(res.results);
@@ -64,7 +63,7 @@ const Hero = ({setCardModalData}) => {
       />
       <button className="info-tag" onClick={() => {
         console.log("id", id)
-        setCardModalData({id: id, mediaType: mediaType})
+        setCardModalData({id: id, media_type: mediaType})
     }}>
         <img alt='info button' src={infobutton}></img>
       </button>
