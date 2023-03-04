@@ -1,7 +1,9 @@
 import "./App.css";
+import React, { useState, useEffect } from "react";
 import Hero from "./Components/Hero";
 import MovieSection from "./Components/MovieSection";
-import React, { useState, useEffect } from "react";
+import SummaryModal from './Components/Modal';
+import SearchBar from './Components/SearchBar';
 import fetchCalls from "./Helpers/SectionList";
 
 function App() {
@@ -9,16 +11,24 @@ function App() {
   const [comedyMovies, setComedyMovies] = useState([]);
   const [crimeMovies, setCrimeMovies] = useState([]);
   const [horrorMovies, setHorrorMovies] = useState([]);
+  
+  //when this is active the modal will be shown 
+  const [cardModalData, setCardModalData] = useState(false);
+  
   useEffect(() => {
     fetchCalls.fetchActionMovies().then((data) => setActionMovies(data));
     fetchCalls.fetchComedyMovies().then((data) => setComedyMovies(data));
     fetchCalls.fetchCrimeMovies().then((data) => setCrimeMovies(data));
     fetchCalls.fetchHorrorMovies().then((data) => setHorrorMovies(data));
   }, []);
+
+
   return (
     <div className="main-container">
       <div className="hero-image">
-        <Hero />
+        <Hero setCardModalData={setCardModalData} />
+        {cardModalData && <SummaryModal cardModalData={cardModalData} setCardModalData={setCardModalData} />}
+        <SearchBar/>
       </div>
 
       <div className="movie-sections">

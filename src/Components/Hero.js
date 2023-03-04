@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from "react";
 import ReactPlayer from "react-player";
 import SummaryModal from "./Modal.js";
-import infobutton from './info-button.png'
+import infobutton from "./info-button.png";
 
-const Hero = () => {
+const Hero = ({setCardModalData}) => {
   const [id, setID] = useState();
+  const [mediaType, setMediaType] = useState();
   const [key, setKey] = useState();
   const [videoURL, setVideoURL] = useState();
   const [playing, setPlaying] = useState(false);
   const [mute, unMute] = useState(false);
-  const [showModel, setShowModel] = useState(false);
 
   function startPlay() {
     setPlaying(true);
@@ -25,6 +25,7 @@ const Hero = () => {
       .then((res) => res.json())
       .then((res) => {
         setID(res.results[0].id);
+        setMediaType(res.results[0].media_type);
         console.log(res.results);
         let url = `https://api.themoviedb.org/3/${res.results[0].media_type}/${res.results[0].id}/videos?api_key=62be9389e81a8c75366a852f32ce210a&language=en-US`;
         console.log(url);
@@ -37,7 +38,7 @@ const Hero = () => {
   }, []);
 
   useEffect(() => {
-    console.log('key', key)
+    console.log("key", key);
     setVideoURL(
       key
         ? `https://www.youtube.com/watch?v=${key}/modestbranding=1&showinfo=0&fs=0&rel=0`
@@ -46,29 +47,26 @@ const Hero = () => {
     console.log(videoURL);
   }, [key]);
 
-  const hideModal = () => { setShowModel(false) }
-  const showModal = () => { setShowModel(true) }
-
   return (
-    <>
-      <div className="hero-row row">
-        {videoURL && (
-          <ReactPlayer
-            muted={true}
-            controls={true}
-            playing={playing}
-            onMouseOver={startPlay}
-            onMouseLeave={stopPlay}
-            url={videoURL}
-            loop={true}
-            height="100%"
-            width="100vw"
-          />
-        )}
-      </div>
-      {showModel && <SummaryModal className="hero-modal" id={id} hideModal={hideModal}/>}
-      <button className='info-tag' onClick={showModal}><img src={infobutton}></img></button>
-    </>
+    <div className="hero-row row">
+      <ReactPlayer
+        muted={true}
+        controls={true}
+        playing={playing}
+        onMouseOver={startPlay}
+        onMouseLeave={stopPlay}
+        url={videoURL}
+        loop={true}
+        height="100%"
+        width="100%"
+      />
+      <button className="info-tag" onClick={() => {
+        console.log("id", id)
+        setCardModalData({id: id, mediaType: mediaType})
+    }}>
+        <img alt='info button' src={infobutton}></img>
+      </button>
+    </div>
   );
 };
 
