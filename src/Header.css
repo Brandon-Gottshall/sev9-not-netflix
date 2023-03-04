@@ -1,20 +1,16 @@
 .header {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     height: 80px;
     background-color: black;
     color: white;
+    padding: 0 16px;
   }
   
-  .header h1 {
-    font-size: 36px;
-    margin: 0;
-  }
-
   .header__switch {
     display: flex;
-    margin-left: auto;
+    margin-left: 16px;
   }
   
   .header__switch-button {
@@ -29,3 +25,4 @@
   .header__switch-button:hover {
     text-decoration: underline;
   }
+  
