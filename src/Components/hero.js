@@ -4,7 +4,7 @@ import infobutton from './info-button.png'
 
 
 
-const HeroImage = ({setCardModalID}) => {
+const HeroImage = ({setCardModalData}) => {
     const [id, getID] = useState();
     const [key, getKey] = useState();
     const [playing, setPlaying] =useState(false);
@@ -37,10 +37,8 @@ function stopPlay(){
 
 return(
     <div className="hero-row row">
-        {/* <iframe width="560" height="315" src= {`https://www.youtube.com/embed/${key?.key}?modestbranding=1&showinfo=0`}frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> */}
    <ReactPlayer muted = {true} controls = {true} playing= {playing} onMouseOver= { startPlay } onMouseLeave= {stopPlay} url= {videoURL} loop = {true} height = '100%' width = '100%' />
-   {/* {id && <SummaryModal className='hero-modal' id={id?.id}/>} */}
-    <button className='info-tag' onClick={()=>setCardModalID(id)}><img src={infobutton}></img></button>
+    <button className='info-tag' onClick={()=>setCardModalData(id)}><img src={infobutton}></img></button>
     </div>
 )
 }

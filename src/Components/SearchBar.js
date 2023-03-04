@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from "react"
+import MovieSection from "./MovieSection";
 
 const SearchBar = () => {
 const [query, setQuery] = useState("");
@@ -35,8 +36,7 @@ const SearchQuery = (e) => {
           type="text"
         />
         <input onClick={SearchQuery} type="submit" value="SEARCH" />
-        {/*turn list of movies into a list of movie cards*/ 
-        searchResults.map(result => )}
+        <MovieSection movies={searchResults} genre={query}/>
       </form>
       
     </div>
