@@ -1,6 +1,6 @@
 import './App.css';
 import SummaryModal from './Components/Modal';
-import HeroImage from './Components/hero';
+import HeroImage from './Components/Hero';
 
 
 function App() {
