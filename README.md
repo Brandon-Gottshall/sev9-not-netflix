@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+# Not Netflix
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### SEV9 Group Project
 
-## Available Scripts
+## Project Description
 
-In the project directory, you can run:
+Not Netflix is a web application that allows users to browse movies and TV shows. Users can watch trailers and read additional information about the movie or TV show.
 
-### `npm start`
+## Team Members
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Sarah Johnson @kitteyandkat
+- Marie Epps @nebulamarie
+- Shawn Bailey @shawnmbailey
+- Connor Hennessey @hennc94
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+<table style="width: 80vw; margin: 0 auto; height: 50vh; border-collapse: separate; border-spacing: 15px;">
+  <tr>
+    <td style="border: 2px black solid; width: 25%; height: 100%;" align="center">
+      <div> 
+        <img src="https://avatars.githubusercontent.com/u/57220112?v=4" alt="Sarah" width="350px" height="200px" style="border-radius: 9999px; margin-top: 10px;"/>
+        <h6>Sarah Johnson</h6>
+      </div>
+      <a href="https://github.com/kitteyandkat" alt="Sarah's Github">
+        <img src="./public/github-mark.svg" alt="Github Invertocat" style="width: 75px; height: 75px; margin-bottom: 15px;"/>
+      </a>
+    </td>
+    <td style="border: 2px black solid; width: 25%; height: 100%; text-align:center;" align="center">
+      <div> 
+        <img src="https://avatars.githubusercontent.com/u/115747807?v=4" alt="Marie" width="350px" height="200px" style="border-radius: 9999px; margin-top: 10px;"/>
+        <h6>Marie Epps</h6>
+      </div>
+      <a href="https://github.com/nebulamarie" alt="Marie's Github" >
+        <img src="./public/github-mark.svg" alt="Github Invertocat" style="width: 75px; height: 75px; margin-bottom: 15px;"/>
+      </a>
+    </td>
+    <td style="border: 2px black solid; width: 25%; height: 100%; text-align:center;" align="center">
+      <div> 
+        <img src="https://avatars.githubusercontent.com/u/115747805?v=4" alt="Sarah" width="350px" height="200px" style="border-radius: 9999px; margin-top: 10px;"/>
+        <h6>Shawn Bailey</h6>
+      </div>
+      <a href="https://github.com/shawnmbailey" alt="Shawn's Github">
+        <img src="./public/github-mark.svg" alt="Github Invertocat" style="width: 75px; height: 75px; margin-bottom: 15px;"/>
+      </a>
+    </td>
+    <td style="border: 2px black solid; width: 25%; height: 100%; text-align:center;" align="center">
+      <div> 
+        <img src="https://avatars.githubusercontent.com/u/115747770?v=4" alt="Connor" width="350px" height="200px" style="border-radius: 9999px; margin-top: 10px;"/>
+        <h6>Connor Hennessey</h6>
+      </div>
+      <a href="https://github.com/Hennc94" alt="Connor's Github" >
+        <img src="./public/github-mark.svg" alt="Github Invertocat" style="width: 75px; height: 75px; margin-bottom: 15px;"/>
+      </a>
+    </td>
+  </tr>
+</table>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Project Links
 
-### `npm run build`
+- [Not Netflix](https://sev9-not-netflix.vercel.app/)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## WireFrames
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![Wireframe](./public/wireframe.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Project Screenshots
 
-### `npm run eject`
+## Libraries Used
+- React-player
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Code Snippets
