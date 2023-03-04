@@ -67,3 +67,63 @@ img{
 /* .ytp-chrome-top, .ytp-show-cards-title {
   display:none !important;
 } */
+.App {
+
+  
+
+}
+h1 {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+
+}
+.body {
+  background: black;
+  color: white;
+}
+.movie-sections{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.movie-sections div{
+  padding-left: 10px;
+}
+.movie-section{
+  border:solid 1px red;
+  height: 320px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  background-color: black;
+}
+img{
+  width: 200px;
+  height: 100%
+}
+.single-movie{
+  border: solid 2px blue;
+  padding: 10px;
+  margin: 2px;
+}
+.Card-Overlay {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  transition: 0.5s ease;
+  opacity: 0;
+  bottom: 0;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+.Overlay:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
