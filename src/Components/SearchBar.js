@@ -36,7 +36,7 @@ const SearchQuery = (e) => {
         />
         <input onClick={SearchQuery} type="submit" value="SEARCH" />
         {/*turn list of movies into a list of movie cards*/ 
-        searchResults.map(result => )}
+        searchResults.map(result => {})}
       </form>
       
     </div>
