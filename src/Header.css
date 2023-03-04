@@ -11,4 +11,21 @@
     font-size: 36px;
     margin: 0;
   }
+
+  .header__switch {
+    display: flex;
+    margin-left: auto;
+  }
   
+  .header__switch-button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 16px;
+  }
+  
+  .header__switch-button:hover {
+    text-decoration: underline;
+  }
