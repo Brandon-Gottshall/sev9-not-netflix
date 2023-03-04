@@ -22,6 +22,7 @@ function App() {
     fetchCalls.fetchHorrorMovies().then((data) => setHorrorMovies(data));
   }, []);
 
+
   return (
     <div className="main-container">
       <div className="hero-image">
