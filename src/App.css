@@ -1,7 +1,6 @@
-.App {
-
-  
-
+html {
+  width: 100vw;
+  overflow-x: hidden;
 }
 h1 {
   background: black;
@@ -76,3 +75,107 @@ img{
   background: hsl(120, 100%, 10%/ 1);
   
 } */
+.row{
+  display: flex;
+}
+.info-tag{
+  border: none;
+  appearance: none;
+  background-color: inherit;
+  opacity: 30%;
+  height: 15px;
+  width: 15px;
+}
+
+.hero-modal img{
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+  opacity: 90%;
+  transition: all 1s;
+  z-index: 3;
+  position: relative;
+  top: -100px; 
+  left: -60px;
+  padding: 20px;
+}
+
+.info-tag {
+  position: absolute;
+  top: 45vw;
+  right: 5vw;
+}
+
+.info-tag img { 
+  width: 20px;
+  height: 20px;
+}
+.hero-row{
+  aspect-ratio: 16/9;
+}
+.hero-modal .info-tag img:hover{
+ opacity: 100%;
+ filter: brightness(40000000%);
+}
+.hero-modal{
+  display: flex;
+  margin-top: auto;
+}
+.react-responsive-modal-modal{
+  opacity: 90% !important;
+  background: rgb(54, 51, 51) !important;
+  color: rgb(240, 237, 237) !important;
+}
+.react-responsive-modal-closeButton{
+  filter: invert(75%);
+  opacity: 50%;
+}
+.react-responsive-modal-closeButton:hover{
+  opacity: 100%;
+  filter: invert(70%) brightness(50%) sepia(100) saturate(100) hue-rotate(25deg);
+  transition: all 2s ease-in-out;
+}
+
+.movie-sections{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.movie-sections div{
+  padding-left: 10px;
+}
+.movie-section{
+  border:solid 1px red;
+  height: 320px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  background-color: black;
+}
+img{
+  width: 200px;
+  height: 100%
+}
+.single-movie{
+  border: solid 2px blue;
+  padding: 10px;
+  margin: 2px;
+}
+.Card-Overlay {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  transition: 0.5s ease;
+  opacity: 0;
+  bottom: 0;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+.Overlay:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
