@@ -3,7 +3,7 @@ import ReactPlayer from "react-player";
 import SummaryModal from "./Modal.js";
 import infobutton from './info-button.png'
 
-const HeroImage = () => {
+const Hero = () => {
   const [id, setID] = useState();
   const [key, setKey] = useState();
   const [videoURL, setVideoURL] = useState();
@@ -72,4 +72,4 @@ const HeroImage = () => {
   );
 };
 
-export default HeroImage;
+export default Hero;

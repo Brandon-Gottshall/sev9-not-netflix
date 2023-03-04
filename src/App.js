@@ -1,5 +1,5 @@
 import "./App.css";
-import HeroImage from "./Components/Hero";
+import Hero from "./Components/Hero";
 import MovieSection from "./Components/MovieSection";
 import React, { useState, useEffect } from "react";
 import fetchCalls from "./Helpers/SectionList";
@@ -18,7 +18,7 @@ function App() {
   return (
     <div className="main-container">
       <div className="hero-image">
-        <HeroImage />
+        <Hero />
       </div>
 
       <div className="movie-sections">
