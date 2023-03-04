@@ -1,12 +1,14 @@
-import React from 'react'
-import './App.css'
-import HeroImage from './components/HeroImage'
+import './App.css';
+import SummaryModal from './Components/Modal';
+import HeroImage from './Components/hero';
+
 
 function App() {
   return (
-    <div className="App">
-      <h1>{process.env.REACT_APP_TMDB_API_KEY}</h1>
-      <HeroImage />
+    <div className="main-container">
+      <div className='hero-image'>
+        <HeroImage/>
+      </div>
     </div>
   );
 }
