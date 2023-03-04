@@ -1,12 +1,63 @@
-body{
-  background-color: rgb(25, 25, 25);
+html {
+  width: 100vw;
+  overflow-x: hidden;
+}
+h1 {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+
+}
+.body {
+  background: black;
+  color: white;
+}
+.movie-sections{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.movie-sections div{
+  padding-left: 10px;
+}
+.movie-section{
+  border:solid 1px red;
+  height: 320px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  background-color: black;
+}
+img{
+  width: 200px;
+  height: 100%
+}
+.single-movie{
+  border: solid 2px blue;
+  padding: 10px;
+  margin: 2px;
+}
+.Card-Overlay {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  transition: 0.5s ease;
+  opacity: 0;
+  bottom: 0;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+.Overlay:hover{
+  cursor: pointer;
+  transform: scale(1.1);
 }
 .row{
   display: flex;
-}
-img{
-  width: 100%;
-  height: 100%;
 }
 .info-tag{
   border: none;
@@ -17,7 +68,7 @@ img{
   width: 15px;
 }
 
-.hero-modal .info-tag img{
+.hero-modal img{
   height: 25px;
   width: 25px;
   cursor: pointer;
@@ -29,20 +80,28 @@ img{
   left: -60px;
   padding: 20px;
 }
+
+.info-tag {
+  position: absolute;
+  top: 45vw;
+  right: 5vw;
+}
+
+.info-tag img { 
+  width: 20px;
+  height: 20px;
+}
 .hero-row{
   aspect-ratio: 16/9;
 }
-
 .hero-modal .info-tag img:hover{
  opacity: 100%;
  filter: brightness(40000000%);
 }
-
 .hero-modal{
   display: flex;
   margin-top: auto;
 }
-
 .react-responsive-modal-modal{
   opacity: 90% !important;
   background: rgb(54, 51, 51) !important;
@@ -50,7 +109,6 @@ img{
 }
 .react-responsive-modal-closeButton{
   filter: invert(75%);
-  
   opacity: 50%;
 }
 .react-responsive-modal-closeButton:hover{
@@ -59,11 +117,46 @@ img{
   transition: all 2s ease-in-out;
 }
 
-/* 
-.ytp-pause-overlay-container, .ytp-chrome-top, .ytp-show-cards-title{
-  display:none !important;
-} */
+.movie-sections{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.movie-sections div{
+  padding-left: 10px;
+}
+.movie-section{
+  border:solid 1px red;
+  height: 320px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  background-color: black;
+}
+img{
+  width: 200px;
+  height: 100%
+}
+.single-movie{
+  border: solid 2px blue;
+  padding: 10px;
+  margin: 2px;
+}
+.Card-Overlay {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  transition: 0.5s ease;
+  opacity: 0;
+  bottom: 0;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+.Overlay:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
 
-/* .ytp-chrome-top, .ytp-show-cards-title {
-  display:none !important;
-} */
