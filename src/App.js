@@ -4,7 +4,6 @@ import HeroImage from './Components/hero';
 import { useState, useEffect } from 'react';
 import SearchBar from './Components/SearchBar';
 
-
 function App() {
 
   //when this is active the modal will be shown 
