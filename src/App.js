@@ -1,5 +1,5 @@
 import "./App.css";
-import HeroImage from "./Components/hero";
+import HeroImage from "./Components/Hero";
 import MovieSection from "./Components/MovieSection";
 import React, { useState, useEffect } from "react";
 import fetchCalls from "./Helpers/SectionList";

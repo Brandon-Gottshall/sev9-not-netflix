@@ -35,7 +35,7 @@ export default function SummaryModal  ({ id = 13, hideModal }) {
   }, [key]);
 
   return (
-    <div >
+<div >~~  
       <Modal open={true} onClose={onCloseModal} center>
         <h2>Film Title: {info?.original_title}</h2>
         <ReactPlayer url={videoURL}/>
