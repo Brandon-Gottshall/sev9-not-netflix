@@ -19,11 +19,10 @@ h1 {
   flex-direction: column;
   justify-content: flex-start;
 }
-.movie-sections div{
-  padding-left: 10px;
-}
+
 .movie-section{
   border:solid 1px red;
+
   height: 320px;
   width: 100%;
   display: flex;
@@ -56,25 +55,25 @@ img{
   cursor: pointer;
   transform: scale(1.1);
 }
-/* ::-webkit-scrollbar {
-  width: 4vw;
+.movie-sections ::-webkit-scrollbar {
+  width: 2em;
   height: 2em;
 }
-::-webkit-scrollbar-track {
+.movie-sections ::-webkit-scrollbar-track {
   background: hsl(210, 8%, 64%);
   border-radius: 100vw;
   margin-block: .5em;
   margin-inline: 10em;
 }
-::-webkit-scrollbar-thumb {
+.movie-sections ::-webkit-scrollbar-thumb {
   background: hsl(120, 100%, 10%/ 1);
   border: .25em solid hsl(120, 75%, 50% / 1);
   border-radius: 100vw;
 }
-::-webkit-scrollbar-thum-hover {
+.movie-sections ::-webkit-scrollbar-thum-hover {
   background: hsl(120, 100%, 10%/ 1);
   
-} */
+}
 .row{
   display: flex;
 }
