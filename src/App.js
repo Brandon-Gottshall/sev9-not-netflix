@@ -1,5 +1,6 @@
 import "./App.css";
 import React, { useState, useEffect } from "react";
+import Header from "./Components/Header"
 import Hero from "./Components/Hero";
 import MovieSection from "./Components/MovieSection";
 import SummaryModal from './Components/Modal';
@@ -25,6 +26,7 @@ function App() {
 
   return (
     <div className="main-container">
+      <Header />
       <div className="hero-image">
         <Hero setCardModalData={setModalData} />
         {modalData && <SummaryModal cardModalData={modalData} setCardModalData={setModalData} />}
