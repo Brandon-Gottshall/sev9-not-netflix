@@ -3,8 +3,9 @@ import ReactPlayer from "react-player";
 import SummaryModal from "./Modal.js";
 import infobutton from "./info-button.png";
 
-const Hero = (setCardModalData) => {
+const Hero = ({setCardModalData}) => {
   const [id, setID] = useState();
+  const [mediaType, setMediaType] = useState();
   const [key, setKey] = useState();
   const [videoURL, setVideoURL] = useState();
   const [playing, setPlaying] = useState(false);
@@ -24,6 +25,7 @@ const Hero = (setCardModalData) => {
       .then((res) => res.json())
       .then((res) => {
         setID(res.results[0].id);
+        setMediaType(res.results[0].media_type);
         console.log(res.results);
         let url = `https://api.themoviedb.org/3/${res.results[0].media_type}/${res.results[0].id}/videos?api_key=62be9389e81a8c75366a852f32ce210a&language=en-US`;
         console.log(url);
@@ -58,8 +60,11 @@ const Hero = (setCardModalData) => {
         height="100%"
         width="100%"
       />
-      <button className="info-tag" onClick={() => setCardModalID(id)}>
-        <img src={infobutton}></img>
+      <button className="info-tag" onClick={() => {
+        console.log("id", id)
+        setCardModalData({id: id, mediaType: mediaType})
+    }}>
+        <img alt='info button' src={infobutton}></img>
       </button>
     </div>
   );

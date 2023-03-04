@@ -16,18 +16,24 @@ export default function SummaryModal({ id = 13, className, setCardModalData, car
 
   useEffect(() => {
     // if a movie is passed in, don't look up
+    let mediaType
     console.log(cardModalData, id);
-    if (cardModalData) {
+    console.log(Object.keys(cardModalData).length);
+    if (Object.keys(cardModalData).length > 2) {
       setInfo(cardModalData);
       id = cardModalData.id;
     } else {
-      fetch(`https://api.themoviedb.org/3/${info.media_type}/${id}?api_key=62be9389e81a8c75366a852f32ce210a&language=en-US`)
+      if (cardModalData.id) { 
+        id = cardModalData.id
+        mediaType = cardModalData.mediaType
+      }
+      fetch(`https://api.themoviedb.org/3/${mediaType}/${id}?api_key=62be9389e81a8c75366a852f32ce210a&language=en-US`)
         .then(res => res.json())
         .then(res => {
           setInfo(res)
         })
     }
-    fetch(`https://api.themoviedb.org/3/${info.media_type}/${id}/videos?api_key=62be9389e81a8c75366a852f32ce210a&language=en-US`)
+    fetch(`https://api.themoviedb.org/3/${mediaType}/${id}/videos?api_key=62be9389e81a8c75366a852f32ce210a&language=en-US`)
       .then(res => res.json())
       .then(res => {
         setKey(res.results[0])

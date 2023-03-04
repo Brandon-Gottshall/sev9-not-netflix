@@ -13,7 +13,7 @@ function App() {
   const [horrorMovies, setHorrorMovies] = useState([]);
   
   //when this is active the modal will be shown 
-  const [cardModalData, setCardModalData] = useState();
+  const [cardModalData, setCardModalData] = useState(false);
   
   useEffect(() => {
     fetchCalls.fetchActionMovies().then((data) => setActionMovies(data));
@@ -21,11 +21,12 @@ function App() {
     fetchCalls.fetchCrimeMovies().then((data) => setCrimeMovies(data));
     fetchCalls.fetchHorrorMovies().then((data) => setHorrorMovies(data));
   }, []);
+
   return (
     <div className="main-container">
       <div className="hero-image">
         <Hero setCardModalData={setCardModalData} />
-        {cardModalData && <SummaryModal cardModalData={cardModalData} setCardModalData={setCardModalData}/>}
+        {cardModalData && <SummaryModal cardModalData={cardModalData} setCardModalData={setCardModalData} />}
         <SearchBar/>
       </div>
 
