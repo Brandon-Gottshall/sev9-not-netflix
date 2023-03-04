@@ -1,7 +1,6 @@
 import React from 'react'
 import Card from './Card';
 
-
 export default function MovieSection(props) {
     console.log(props.movies)
 
@@ -13,6 +12,5 @@ export default function MovieSection(props) {
                 )
             }) : ''}
         </div>
-    
     )
 }
