@@ -57,4 +57,22 @@ img{
   cursor: pointer;
   transform: scale(1.1);
 }
-
+/* ::-webkit-scrollbar {
+  width: 4vw;
+  height: 2em;
+}
+::-webkit-scrollbar-track {
+  background: hsl(210, 8%, 64%);
+  border-radius: 100vw;
+  margin-block: .5em;
+  margin-inline: 10em;
+}
+::-webkit-scrollbar-thumb {
+  background: hsl(120, 100%, 10%/ 1);
+  border: .25em solid hsl(120, 75%, 50% / 1);
+  border-radius: 100vw;
+}
+::-webkit-scrollbar-thum-hover {
+  background: hsl(120, 100%, 10%/ 1);
+  
+} */
