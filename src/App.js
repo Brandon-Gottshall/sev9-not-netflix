@@ -1,36 +1,33 @@
 import "./App.css";
+import React, { useState } from "react";
+import Header from "./Components/Header"
 import Hero from "./Components/Hero";
-import MovieSection from "./Components/MovieSection";
-import React, { useState, useEffect } from "react";
-import fetchCalls from "./Helpers/SectionList";
+import SummaryModal from './Components/Modal';
+import SearchBar from './Components/SearchBar';
+import MovieContainer from './Components/MovieContainer';
+import TvContainer from './Components/TvContainer';
 
 function App() {
-  const [actionMovies, setActionMovies] = useState([]);
-  const [comedyMovies, setComedyMovies] = useState([]);
-  const [crimeMovies, setCrimeMovies] = useState([]);
-  const [horrorMovies, setHorrorMovies] = useState([]);
-  useEffect(() => {
-    fetchCalls.fetchActionMovies().then((data) => setActionMovies(data));
-    fetchCalls.fetchComedyMovies().then((data) => setComedyMovies(data));
-    fetchCalls.fetchCrimeMovies().then((data) => setCrimeMovies(data));
-    fetchCalls.fetchHorrorMovies().then((data) => setHorrorMovies(data));
-  }, []);
+
+  
+  //when this is active the modal will be shown 
+  const [modalData, setModalData] = useState(false);
+  
+  const [tvToggle, setTvToggle] = useState(false);
+
+
   return (
     <div className="main-container">
+      <Header setTvToggle={setTvToggle} />
       <div className="hero-image">
-        <Hero />
+        <Hero setCardModalData={setModalData} />
+        {modalData && <SummaryModal cardModalData={modalData} setCardModalData={setModalData} />}
+        <SearchBar/>
       </div>
 
-      <div className="movie-sections">
-        <h1>Horror</h1>
-        <MovieSection movies={horrorMovies} genre={"Horror"} />
-        <h1>Action</h1>
-        <MovieSection movies={actionMovies} genre={"Action"} />
-        <h1>Comedy</h1>
-        <MovieSection movies={comedyMovies} genre={"Comedy"} />
-        <h1>Crime</h1>
-        <MovieSection movies={crimeMovies} genre={"Crime"} />
-      </div>
+      { !tvToggle && <MovieContainer setModalData={setModalData} />}
+      { tvToggle && <TvContainer setModalData={setModalData} />}
+      
     </div>
   );
 }
