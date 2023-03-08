@@ -58,8 +58,10 @@ Not Netflix is a web application that allows users to browse movies and TV shows
 ![Wireframe](./public/wireframe.png)
 
 ## Project Screenshots
+![Screenshot](./public/screenshot.png)
 
 ## Libraries Used
-- React-player
-
-## Code Snippets
+- React
+- react-player
+- react-hover-video-player
+- react-responsive-modal
