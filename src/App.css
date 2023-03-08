@@ -1,14 +1,17 @@
-body{
+body {
   background-color: rgb(25, 25, 25);
 }
-.row{
+
+.row {
   display: flex;
 }
-img{
+
+img {
   width: 100%;
   height: 100%;
 }
-.info-tag{
+
+.info-tag {
   border: none;
   appearance: none;
   background-color: inherit;
@@ -17,7 +20,7 @@ img{
   width: 15px;
 }
 
-.hero-row .info-tag img{
+.hero-row .info-tag img {
   height: 25px;
   width: 25px;
   cursor: pointer;
@@ -25,36 +28,39 @@ img{
   transition: all 1s;
   z-index: 5;
   position: absolute;
-  bottom: 20px; 
+  bottom: 20px;
   right: 40px;
   padding: 20px;
 }
-.hero-row{
+
+.hero-row {
   aspect-ratio: 16/9;
   position: relative;
 }
 
-.hero-modal .info-tag img:hover{
- opacity: 100%;
- filter: brightness(40000000%);
+.hero-modal .info-tag img:hover {
+  opacity: 100%;
+  filter: brightness(40000000%);
 }
 
-.hero-modal{
+.hero-modal {
   display: flex;
   margin-top: auto;
 }
 
-.react-responsive-modal-modal{
+.react-responsive-modal-modal {
   opacity: 90% !important;
   background: rgb(54, 51, 51) !important;
   color: rgb(240, 237, 237) !important;
 }
-.react-responsive-modal-closeButton{
+
+.react-responsive-modal-closeButton {
   filter: invert(75%);
   transition: opacity 1s;
   opacity: 30%;
 }
-.react-responsive-modal-closeButton:hover{
+
+.react-responsive-modal-closeButton:hover {
   opacity: 100%;
   filter: invert(70%) brightness(50%) sepia(100) saturate(100) hue-rotate(25deg);
 }
@@ -67,11 +73,8 @@ img{
 /* .ytp-chrome-top, .ytp-show-cards-title {
   display:none !important;
 } */
-.App {
+.App {}
 
-  
-
-}
 h1 {
   background: black;
   color: white;
@@ -80,20 +83,24 @@ h1 {
   margin: 0px;
 
 }
+
 .body {
   background: black;
   color: white;
 }
-.movie-sections{
+
+.movie-sections {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
-.movie-sections div{
+
+.movie-sections div {
   padding-left: 10px;
 }
-.movie-section{
-  border:solid 1px red;
+
+.movie-section {
+  border: solid 1px red;
   height: 320px;
   width: 100%;
   display: flex;
@@ -102,15 +109,18 @@ h1 {
   overflow-y: hidden;
   background-color: black;
 }
-img{
+
+img {
   width: 200px;
   height: 100%
 }
-.single-movie{
+
+.single-movie {
   border: solid 2px blue;
   padding: 10px;
   margin: 2px;
 }
+
 .Card-Overlay {
   position: absolute;
   background: rgba(0, 0, 0, 0.8);
@@ -122,8 +132,73 @@ img{
   padding: 20px;
   text-align: center;
 }
-.Overlay:hover{
+
+.Overlay:hover {
   cursor: pointer;
   transform: scale(1.1);
+}
+
+.search-bar-container{
+  margin-top: 15px;
+  margin-bottom: 20px;
+  /* display: flex;
+  flex-direction: column; */
+  height:360px;
+}
+
+.search-bar-container .movie-section{
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+.search-bar {
+  width: 500px;
+  height: 40px;
+  background: #444;
+  background: rgba(0, 0, 0, .2);
+  border-radius: 6px;
+  border: 1px solid rgb(151, 15, 15);
+  margin-left: 30%;
+}
+
+.search-field {
+  width: 370px;
+  padding: 10px 5px;
+  float: left;
+  color: white;
+  border: 0;
+  background: transparent;
+  border-radius: 3px 0 0 3px;
+}
+
+.search-field:focus {
+  outline: 0;
+  background: transparent;
+}
+
+.search-bar-button {
+  position: relative;
+  float: right;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  height: 40px;
+  width: 120px;
+  color: gray;
+  background: transparent;
+  border-left: 1px solid ;
+  border-radius: 0 3px 3px 0;
+}
+
+.search-bar-button:hover {
+  background: red;
+  color: rgb(219, 210, 210);
+}
+
+.search-bar-button:active {
+  box-shadow: 0px 0px 12px 0px rgb(141, 52, 52);
+}
+
+.search-bar-button:focus {
+  outline: 0;
 }
 
