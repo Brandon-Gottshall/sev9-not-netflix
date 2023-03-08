@@ -1,9 +1,9 @@
 import './App.css';
-import MovieSection from './components/MovieSection';
+import MovieSection from './Components/MovieSection';
 import React, { useState, useEffect } from 'react';
-import SummaryModal from './components/Modal';
-import HeroImage from './components/hero';
-import SearchBar from './components/SearchBar';
+import SummaryModal from './Components/Modal';
+import HeroImage from './Components/Hero';
+import SearchBar from './Components/SearchBar';
 
 
 function App() {
