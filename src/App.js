@@ -22,11 +22,11 @@ function App() {
       <div className="hero-image">
         <Hero setCardModalData={setModalData} />
         {modalData && <SummaryModal cardModalData={modalData} setCardModalData={setModalData} />}
+        </div>
+        
+        { !tvToggle && <MovieContainer setModalData={setModalData} />}
+        { tvToggle && <TvContainer setModalData={setModalData} />}
         <SearchBar/>
-      </div>
-
-      { !tvToggle && <MovieContainer setModalData={setModalData} />}
-      { tvToggle && <TvContainer setModalData={setModalData} />}
       
     </div>
   );
